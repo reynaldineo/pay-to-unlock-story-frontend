@@ -5,7 +5,7 @@ import BooksContainer from "./(home)/containers/BooksContainer";
 import HeroBanner from "./(home)/containers/HeroBanner";
 import Footer from "@/components/Footer";
 
-export default withAuth(Home, "public");
+export default withAuth(Home, "optional");
 function Home() {
   return (
     <div className="min-h-screen bg-background">

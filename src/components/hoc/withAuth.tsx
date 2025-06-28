@@ -132,7 +132,7 @@ export default function withAuth<T>(
               router.replace(ADMIN_ROUTE);
             }
           }
-        } else if (routeRole !== "public") {
+        } else if (routeRole !== "public" && routeRole !== "optional") {
           router.replace(`${LOGIN_ROUTE}?redirect=${pathName}`);
         }
       };
