@@ -13,6 +13,6 @@ export type BookResponse = {
 
 export const useGetStoryQuery = () => {
   return useQuery<ApiResponse<BookResponse[]>, AxiosError<ApiError>>({
-    queryKey: ["/api/story/"],
+    queryKey: ["/api/story"],
   });
 };
