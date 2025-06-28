@@ -1,7 +1,7 @@
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();
-export const tokenKey = "@nexttemplate/token";
+export const tokenKey = "@reynaldineo/token";
 
 export const getToken = () => cookies.get(tokenKey);
 
